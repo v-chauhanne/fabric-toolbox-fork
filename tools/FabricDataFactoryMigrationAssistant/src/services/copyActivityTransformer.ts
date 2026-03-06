@@ -617,7 +617,7 @@ export class CopyActivityTransformer {
 
     // For unknown dataset types, try to create a reasonable mapping by appending "Source"
     // This ensures we never return "Unknown" 
-    const generatedType = `${adfDatasetType}Source`;
+    const generatedType = `${adfDatasetType}`;
     console.warn(`Using generated source type '${generatedType}' for ADF dataset type '${adfDatasetType}'. This may need manual verification.`);
     return generatedType;
   }
